@@ -28,11 +28,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Nightly Merge
+    - name: Up Merge
       uses: bambamboole/gha-upmerge@master
       with:
         stable_branch: 'master'
-        development_branch: 'develeop'
+        development_branch: 'develop'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
